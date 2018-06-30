@@ -1,0 +1,23 @@
+.navbar-fixed-left {
+  width: 200px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 200px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left {
+  margin-top: 50px;
+  /*margin-left: 200px;*/
+}
+
+li:hover{
+    background-color:#c2c2c2;
+    cursor: pointer;
+}

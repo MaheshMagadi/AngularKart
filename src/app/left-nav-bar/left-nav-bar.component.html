@@ -1,0 +1,7 @@
+
+<div class="navbar navbar-inverse navbar-fixed-left">
+  <ul class="nav navbar-nav">
+     <li *ngFor="let page of pages"><a [routerLink]="['/component', page.contentId]" onclick="window.reload()">{{page.contentHeader}}</a></li>
+     
+  </ul>
+</div>

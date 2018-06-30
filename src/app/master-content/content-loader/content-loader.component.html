@@ -1,0 +1,40 @@
+
+
+
+<!--<h1>{{about1}}</h1>-->
+
+<!--<h1>{{sampleVar}}</h1>-->
+<div *ngFor="let page of pages">
+    <div *ngIf="page.contentId == id">
+        <h1>{{page.contentHeader}}</h1>
+        <br/>
+
+<h5>{{page.contentDescription}}</h5><br>
+
+<img src="G:\Angular4\JqWidgetsApp\src\assets\images\Calnder.png">
+<div class="container-fluid" style="border:1px solid black; padding:10px 10px 10px 10px; height:auto;">
+  
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a data-toggle="tab" href="#home"><b>HTML</b></a></li>
+    <li><a data-toggle="tab" href="#menu1" ><b>TS</b></a></li>
+    <li><a data-toggle="tab" href="#menu2"><b>JSON</b></a></li>
+  </ul>
+
+  <div class="tab-content" style="margin-top:20px;margin-left:20px;">
+    <div id="home" class="tab-pane fade in active" *ngIf="page.htmlContent != ''">
+       <h5>{{page.htmlContent}}</h5>
+    </div>
+    <div id="menu1" class="tab-pane fade" *ngIf="page.appComponentTs != ''">
+       <h5>{{page.appComponentTs}}</h5>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+       <h5>{{page.supportJson}}</h5>
+    </div>
+    
+  </div>
+</div>
+        
+    </div>
+</div>
+
+
